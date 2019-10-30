@@ -58,6 +58,11 @@ class Person
         end
     end
     
-    
-    
+    def take_bath
+        @happiness += 4
+        "♪ Rub-a-dub just relaxing in the tub ♫"
+    end
+
+
+
 end
