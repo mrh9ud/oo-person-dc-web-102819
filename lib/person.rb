@@ -37,7 +37,7 @@ class Person
 
     def clean?
         if @hygiene > 7 && @hygiene <= 10 && @hygiene >= 0
-            @hygiene
+            return true
         elsif @hygiene > 10
             @hygiene = 10
         elsif @hygiene < 0
