@@ -23,9 +23,9 @@ class Person
         if @happiness >= 0 && @happiness <= 10
          return @happiness
         elsif @happiness > 10
-            return 10
+            @happiness = 10
         else 
-            return 0
+            @happiness = 0
         end
       end
     
