@@ -63,7 +63,7 @@ class Person
       adjusted_hygiene = @hygiene += 4
       hygiene=(adjusted_hygiene)
      "♪ Rub-a-dub just relaxing in the tub ♫"
-    
+    binding.pry
     end
     
     def work_out
