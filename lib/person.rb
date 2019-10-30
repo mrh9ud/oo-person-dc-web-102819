@@ -19,13 +19,18 @@ class Person
         "All about the benjamins"
     end
 
-    def happy?
-        if @happiness > 7 && @happiness <= 10 && @happiness >= 0
-            return true
+    def happiness=(happiness)
+        if @happiness >= 0 && @happiness <= 10
+         return @happiness
         elsif @happiness > 10
-            @happiness = 10
-        elsif @happiness < 0
-            @happiness = 0
+            return 10
+        else 
+            return 0
+        end
+    
+    def happy?
+        if @happiness > 7 && @happiness <= 10
+            return true
         else
             return false
         end
