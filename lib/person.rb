@@ -27,6 +27,7 @@ class Person
         else 
             return 0
         end
+      end
     
     def happy?
         if @happiness > 7 && @happiness <= 10
