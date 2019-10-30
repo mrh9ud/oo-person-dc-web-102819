@@ -60,10 +60,10 @@ class Person
     end
     
     def take_bath
-      @hygiene += 4
-      hygiene=(@hygiene)
+      adjusted_hygiene = @hygiene += 4
+      hygiene=(adjusted_hygiene)
      "♪ Rub-a-dub just relaxing in the tub ♫"
-     binding.pry
+    
     end
     
     def work_out
