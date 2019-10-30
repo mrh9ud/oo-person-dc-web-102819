@@ -38,9 +38,6 @@ class Person
         end
     end
 
-    def take_bath
-
-    end
 
     def clean?
         if @hygiene > 7 && @hygiene <= 10 && @hygiene >= 0
