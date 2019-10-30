@@ -1,7 +1,8 @@
 # your code goes here
 class Person
     @@all = []
-    attr_accessor :name, :happiness, :hygiene, :account
+    attr_reader :name
+    attr_accessor :happiness, :hygiene, :account
     def initialize(name, account=25, happiness=8, hygiene=8)
         @name = name
         @account = account
