@@ -72,13 +72,13 @@ class Person
     end
 
     def hygiene=(hygiene_level)
-        if hygiene_level >= 0 && hygiene_level <= 10
-            @hygiene = hygiene_level
-          elsif hygiene_level > 10
-             @hygiene = 10
-          else 
-              @hygiene = 0
-          end
+      if hygiene_level >= 0 && hygiene_level <= 10
+          @hygiene = hygiene_level
+        elsif hygiene_level > 10
+           @hygiene = 10
+        else 
+            @hygiene = 0
+      end
     end
 
     def clean?
