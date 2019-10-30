@@ -1,5 +1,4 @@
 # your code goes here
-# your code goes here
 class Person
     @@all = []
     attr_accessor :name, :happiness, :hygiene, :account
@@ -22,7 +21,13 @@ class Person
 
     def happy?
         if @happiness > 7 && @happiness <= 10 && @happiness >= 0
-            puts true
+            return true
+        elsif @happiness > 10
+            @happiness = 10
+        elsif @happiness < 0
+            @happiness = 0
+        else
+            return false
         end
     end
 
@@ -31,8 +36,14 @@ class Person
     end
 
     def clean?
-        if @hygiene > 7
-            return true
+        if @hygiene > 7 && @hygiene <= 10 && @hygiene >= 0
+            @hygiene
+        elsif @hygiene > 10
+            @hygiene = 10
+        elsif @hygiene < 0
+            @hygiene = 0
+        else 
+            return false
         end
     end
     
